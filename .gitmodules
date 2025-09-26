@@ -1,0 +1,6 @@
+[submodule "lab1/lib/SFML"]
+	path = lab1/lib/SFML
+	url = git@github.com:SFML/SFML.git
+[submodule "lab1/lib/openal-soft"]
+	path = lab1/lib/openal-soft
+	url = git@github.com:kcat/openal-soft.git
