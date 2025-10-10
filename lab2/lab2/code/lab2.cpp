@@ -33,6 +33,8 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
+    XInitThreads();
+    
     // Set frequency
     typedef chrono::duration<double, ratio<1, 4>> wait_time_t;
     
@@ -93,7 +95,7 @@ int main(int argc, char* argv[])
     // Allocate threads upfront
     int chunk_size = num_rows/num_threads;
     int cell_chunk_size = num_cells/num_threads;
-    thread *thread_ptr;
+    thread *thread_ptr = nullptr;
     if(type == 0)
     {
         thread_ptr = new thread[num_threads];
