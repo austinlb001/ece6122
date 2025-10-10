@@ -1,2 +1,0 @@
-/usr/bin/ar qc ../../output/lib/libalsoft.excommon.a CMakeFiles/alsoft.excommon.dir/examples/common/alhelpers.c.o
-/usr/bin/ranlib ../../output/lib/libalsoft.excommon.a

@@ -1,7 +1,0 @@
-# Hashes of file build rules.
-4aa18772f28a3034f85039d9b0946e08 lib/openal-soft/CMakeFiles/alsoft.build_version
-b5ca082fece19e68fe8492cba2b59aa7 lib/openal-soft/CMakeFiles/clang-tidy-check
-873786e2a36d9653a2719df7a7dfc8c4 lib/openal-soft/default_hrtf.txt
-6756a0bfa574d30f880a00bc2b75251c lib/openal-soft/utils/alsoft-config/moc_mainwindow.cpp
-d55e3560e064f938a73e04143feb3256 lib/openal-soft/utils/alsoft-config/ui_mainwindow.h
-7e2cbd19fe8b6e2fb5a65755f123a5be lib/openal-soft/version_witness.txt

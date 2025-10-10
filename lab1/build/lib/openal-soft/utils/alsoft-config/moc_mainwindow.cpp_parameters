@@ -1,4 +1,0 @@
--D_GLIBCXX_ASSERTIONS=1
--o
-/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6227/lab1/build/lib/openal-soft/utils/alsoft-config/moc_mainwindow.cpp
-/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6227/lab1/lib/openal-soft/utils/alsoft-config/mainwindow.h
