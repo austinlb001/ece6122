@@ -1,0 +1,918 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 6.17.2-arch1-1 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/3.31.9/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/3.31.9/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-BBIDWf"
+      binary: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-BBIDWf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-BBIDWf'
+        
+        Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4c762/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_4c762.dir/build.make CMakeFiles/cmTC_4c762.dir/build
+        make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-BBIDWf'
+        Building C object CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20250813 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c762.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_4c762.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccP4Y25W.s
+        GNU C23 (GCC) version 15.2.1 20250813 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 15.2.1 20250813, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 09af9d42b9185573b6c370dd7aa39e64
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c762.dir/'
+         as -v --64 -o CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o /tmp/ccP4Y25W.s
+        GNU assembler version 2.45.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_4c762
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c762.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20250813 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4c762' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4c762.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccc0Lb8z.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4c762 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        collect2 version 15.2.1 20250813
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccc0Lb8z.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4c762 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        GNU ld (GNU Binutils) 2.45.0
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4c762' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4c762.'
+        /usr/bin/cc  -v -Wl,-v -rdynamic CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o -o cmTC_4c762
+        make[1]: Leaving directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-BBIDWf'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-BBIDWf']
+        ignore line: []
+        ignore line: [Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4c762/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_4c762.dir/build.make CMakeFiles/cmTC_4c762.dir/build]
+        ignore line: [make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-BBIDWf']
+        ignore line: [Building C object CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20250813 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c762.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1 -quiet -v /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_4c762.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccP4Y25W.s]
+        ignore line: [GNU C23 (GCC) version 15.2.1 20250813 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.1 20250813  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 09af9d42b9185573b6c370dd7aa39e64]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c762.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o /tmp/ccP4Y25W.s]
+        ignore line: [GNU assembler version 2.45.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_4c762]
+        ignore line: [/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c762.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20250813 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_4c762' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_4c762.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccc0Lb8z.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4c762 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccc0Lb8z.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_4c762] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [collect2 version 15.2.1 20250813]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccc0Lb8z.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_4c762 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_4c762.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.45.0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-yjjGC2"
+      binary: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-yjjGC2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-yjjGC2'
+        
+        Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_52e40/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_52e40.dir/build.make CMakeFiles/cmTC_52e40.dir/build
+        make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-yjjGC2'
+        Building CXX object CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20250813 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_52e40.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_52e40.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccgBuvtX.s
+        GNU C++17 (GCC) version 15.2.1 20250813 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 15.2.1 20250813, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: 452a313327dacf71986995db29f6855a
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_52e40.dir/'
+         as -v --64 -o CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccgBuvtX.s
+        GNU assembler version 2.45.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_52e40
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52e40.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++,rust,cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.1 20250813 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_52e40' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_52e40.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2NOvxL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_52e40 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        collect2 version 15.2.1 20250813
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2NOvxL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_52e40 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o
+        GNU ld (GNU Binutils) 2.45.0
+        COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_52e40' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_52e40.'
+        /usr/bin/c++  -v -Wl,-v -rdynamic CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_52e40
+        make[1]: Leaving directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-yjjGC2'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1] ==> [/usr/include/c++/15.2.1]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu] ==> [/usr/include/c++/15.2.1/x86_64-pc-linux-gnu]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward] ==> [/usr/include/c++/15.2.1/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/15.2.1;/usr/include/c++/15.2.1/x86_64-pc-linux-gnu;/usr/include/c++/15.2.1/backward;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-yjjGC2']
+        ignore line: []
+        ignore line: [Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_52e40/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_52e40.dir/build.make CMakeFiles/cmTC_52e40.dir/build]
+        ignore line: [make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-yjjGC2']
+        ignore line: [Building CXX object CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20250813 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_52e40.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/cc1plus -quiet -v -D_GNU_SOURCE /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_52e40.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccgBuvtX.s]
+        ignore line: [GNU C++17 (GCC) version 15.2.1 20250813 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 15.2.1 20250813  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../include/c++/15.2.1/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 452a313327dacf71986995db29f6855a]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_52e40.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccgBuvtX.s]
+        ignore line: [GNU assembler version 2.45.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.45.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_52e40]
+        ignore line: [/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52e40.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ rust cobol --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/gcc/-/issues --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.1 20250813 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_52e40' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_52e40.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2NOvxL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_52e40 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc2NOvxL.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_52e40] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        ignore line: [collect2 version 15.2.1 20250813]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2NOvxL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_52e40 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_52e40.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../..] ==> [/usr/lib]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.45.0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "external/glfw-3.1.2/CMakeLists.txt:95 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-pDSiKc"
+      binary: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-pDSiKc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/external/glfw-3.1.2/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-pDSiKc'
+        
+        Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4e6bd/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_4e6bd.dir/build.make CMakeFiles/cmTC_4e6bd.dir/build
+        make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-pDSiKc'
+        Building C object CMakeFiles/cmTC_4e6bd.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_4e6bd.dir/src.c.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-pDSiKc/src.c
+        Linking C executable cmTC_4e6bd
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e6bd.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_4e6bd.dir/src.c.o -o cmTC_4e6bd
+        make[1]: Leaving directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-pDSiKc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/FindX11.cmake:693 (check_library_exists)"
+      - "external/glfw-3.1.2/CMakeLists.txt:259 (find_package)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so"
+    directories:
+      source: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-IcfmlX"
+      binary: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-IcfmlX"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/external/glfw-3.1.2/CMake/modules"
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-IcfmlX'
+        
+        Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_df2e4/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_df2e4.dir/build.make CMakeFiles/cmTC_df2e4.dir/build
+        make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-IcfmlX'
+        Building C object CMakeFiles/cmTC_df2e4.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_df2e4.dir/CheckFunctionExists.c.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-IcfmlX/CheckFunctionExists.c
+        Linking C executable cmTC_df2e4
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_df2e4.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay -rdynamic CMakeFiles/cmTC_df2e4.dir/CheckFunctionExists.c.o -o cmTC_df2e4  /usr/lib/libX11.so /usr/lib/libXext.so
+        make[1]: Leaving directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-IcfmlX'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/FindX11.cmake:708 (check_function_exists)"
+      - "external/glfw-3.1.2/CMakeLists.txt:259 (find_package)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-DtUdsu"
+      binary: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-DtUdsu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/external/glfw-3.1.2/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-DtUdsu'
+        
+        Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_482a8/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_482a8.dir/build.make CMakeFiles/cmTC_482a8.dir/build
+        make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-DtUdsu'
+        Building C object CMakeFiles/cmTC_482a8.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_482a8.dir/CheckFunctionExists.c.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-DtUdsu/CheckFunctionExists.c
+        Linking C executable cmTC_482a8
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_482a8.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname -rdynamic CMakeFiles/cmTC_482a8.dir/CheckFunctionExists.c.o -o cmTC_482a8
+        make[1]: Leaving directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-DtUdsu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/FindX11.cmake:722 (check_function_exists)"
+      - "external/glfw-3.1.2/CMakeLists.txt:259 (find_package)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-SLBqH7"
+      binary: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-SLBqH7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/external/glfw-3.1.2/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-SLBqH7'
+        
+        Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_409ab/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_409ab.dir/build.make CMakeFiles/cmTC_409ab.dir/build
+        make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-SLBqH7'
+        Building C object CMakeFiles/cmTC_409ab.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_409ab.dir/CheckFunctionExists.c.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-SLBqH7/CheckFunctionExists.c
+        Linking C executable cmTC_409ab
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_409ab.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect -rdynamic CMakeFiles/cmTC_409ab.dir/CheckFunctionExists.c.o -o cmTC_409ab
+        make[1]: Leaving directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-SLBqH7'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/FindX11.cmake:731 (check_function_exists)"
+      - "external/glfw-3.1.2/CMakeLists.txt:259 (find_package)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-XpAH0Q"
+      binary: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-XpAH0Q"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/external/glfw-3.1.2/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-XpAH0Q'
+        
+        Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_48330/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_48330.dir/build.make CMakeFiles/cmTC_48330.dir/build
+        make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-XpAH0Q'
+        Building C object CMakeFiles/cmTC_48330.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_48330.dir/CheckFunctionExists.c.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-XpAH0Q/CheckFunctionExists.c
+        Linking C executable cmTC_48330
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_48330.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove -rdynamic CMakeFiles/cmTC_48330.dir/CheckFunctionExists.c.o -o cmTC_48330
+        make[1]: Leaving directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-XpAH0Q'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/FindX11.cmake:740 (check_function_exists)"
+      - "external/glfw-3.1.2/CMakeLists.txt:259 (find_package)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-HkgRZ4"
+      binary: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-HkgRZ4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/external/glfw-3.1.2/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-HkgRZ4'
+        
+        Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_36517/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_36517.dir/build.make CMakeFiles/cmTC_36517.dir/build
+        make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-HkgRZ4'
+        Building C object CMakeFiles/cmTC_36517.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_36517.dir/CheckFunctionExists.c.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-HkgRZ4/CheckFunctionExists.c
+        Linking C executable cmTC_36517
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36517.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat -rdynamic CMakeFiles/cmTC_36517.dir/CheckFunctionExists.c.o -o cmTC_36517
+        make[1]: Leaving directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-HkgRZ4'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CheckLibraryExists.cmake:78 (try_compile)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/FindX11.cmake:750 (check_library_exists)"
+      - "external/glfw-3.1.2/CMakeLists.txt:259 (find_package)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-RGBmNC"
+      binary: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-RGBmNC"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/external/glfw-3.1.2/CMake/modules"
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-RGBmNC'
+        
+        Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_72f59/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_72f59.dir/build.make CMakeFiles/cmTC_72f59.dir/build
+        make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-RGBmNC'
+        Building C object CMakeFiles/cmTC_72f59.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_72f59.dir/CheckFunctionExists.c.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-RGBmNC/CheckFunctionExists.c
+        Linking C executable cmTC_72f59
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72f59.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -rdynamic CMakeFiles/cmTC_72f59.dir/CheckFunctionExists.c.o -o cmTC_72f59  -lICE
+        make[1]: Leaving directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-RGBmNC'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt:1 (check_include_file)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-FxrOMR"
+      binary: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-FxrOMR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-FxrOMR'
+        
+        Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9e246/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_9e246.dir/build.make CMakeFiles/cmTC_9e246.dir/build
+        make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-FxrOMR'
+        Building C object CMakeFiles/cmTC_9e246.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_9e246.dir/CheckIncludeFile.c.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-FxrOMR/CheckIncludeFile.c
+        Linking C executable cmTC_9e246
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9e246.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_9e246.dir/CheckIncludeFile.c.o -o cmTC_9e246
+        make[1]: Leaving directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-FxrOMR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt:2 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-6NdfZE"
+      binary: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-6NdfZE"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-6NdfZE'
+        
+        Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ac5f9/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_ac5f9.dir/build.make CMakeFiles/cmTC_ac5f9.dir/build
+        make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-6NdfZE'
+        Building C object CMakeFiles/cmTC_ac5f9.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_ac5f9.dir/CheckIncludeFile.c.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-6NdfZE/CheckIncludeFile.c
+        Linking C executable cmTC_ac5f9
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ac5f9.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_ac5f9.dir/CheckIncludeFile.c.o -o cmTC_ac5f9
+        make[1]: Leaving directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-6NdfZE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt:3 (check_include_file)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-tD1cxJ"
+      binary: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-tD1cxJ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-tD1cxJ'
+        
+        Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d4ce2/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_d4ce2.dir/build.make CMakeFiles/cmTC_d4ce2.dir/build
+        make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-tD1cxJ'
+        Building C object CMakeFiles/cmTC_d4ce2.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_d4ce2.dir/CheckIncludeFile.c.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-tD1cxJ/CheckIncludeFile.c
+        Linking C executable cmTC_d4ce2
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4ce2.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_d4ce2.dir/CheckIncludeFile.c.o -o cmTC_d4ce2
+        make[1]: Leaving directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-tD1cxJ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt:22 (check_type_size)"
+    checks:
+      - "Check size of off64_t"
+    directories:
+      source: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-UtfVaL"
+      binary: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-UtfVaL"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_OFF64_T"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-UtfVaL'
+        
+        Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6c46f/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_6c46f.dir/build.make CMakeFiles/cmTC_6c46f.dir/build
+        make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-UtfVaL'
+        Building C object CMakeFiles/cmTC_6c46f.dir/OFF64_T.c.o
+        /usr/bin/cc -DHAVE_STDDEF_H -DHAVE_STDINT_H -DHAVE_SYS_TYPES_H -D_LARGEFILE64_SOURCE=1   -o CMakeFiles/cmTC_6c46f.dir/OFF64_T.c.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-UtfVaL/OFF64_T.c
+        Linking C executable cmTC_6c46f
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6c46f.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_6c46f.dir/OFF64_T.c.o -o cmTC_6c46f
+        make[1]: Leaving directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-UtfVaL'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CheckFunctionExists.cmake:93 (try_compile)"
+      - "external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt:31 (check_function_exists)"
+    checks:
+      - "Looking for fseeko"
+    directories:
+      source: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-Zx7WAU"
+      binary: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-Zx7WAU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-Zx7WAU'
+        
+        Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b1b1d/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_b1b1d.dir/build.make CMakeFiles/cmTC_b1b1d.dir/build
+        make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-Zx7WAU'
+        Building C object CMakeFiles/cmTC_b1b1d.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fseeko -o CMakeFiles/cmTC_b1b1d.dir/CheckFunctionExists.c.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-Zx7WAU/CheckFunctionExists.c
+        Linking C executable cmTC_b1b1d
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1b1d.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fseeko -rdynamic CMakeFiles/cmTC_b1b1d.dir/CheckFunctionExists.c.o -o cmTC_b1b1d
+        make[1]: Leaving directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-Zx7WAU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "cmake-3.31.9-linux-x86_64/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "external/assimp-3.0.1270/contrib/zlib/CMakeLists.txt:39 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-mQ90ao"
+      binary: "/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-mQ90ao"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+    buildResult:
+      variable: "Z_HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-mQ90ao'
+        
+        Run Build Command(s): /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9aebd/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_9aebd.dir/build.make CMakeFiles/cmTC_9aebd.dir/build
+        make[1]: Entering directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-mQ90ao'
+        Building C object CMakeFiles/cmTC_9aebd.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_9aebd.dir/CheckIncludeFile.c.o -c /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-mQ90ao/CheckIncludeFile.c
+        Linking C executable cmTC_9aebd
+        /mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/cmake-3.31.9-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9aebd.dir/link.txt --verbose=1
+        /usr/bin/cc -rdynamic CMakeFiles/cmTC_9aebd.dir/CheckIncludeFile.c.o -o cmTC_9aebd
+        make[1]: Leaving directory '/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab3/build/CMakeFiles/CMakeScratch/TryCompile-mQ90ao'
+        
+      exitCode: 0
+...
