@@ -31,7 +31,6 @@ const float deltaTheta = 0.01;
 float phi = 0.0; // Horizontal Angle
 const float deltaPhi = 0.25;
 
-
 void computeMatricesFromInputs(){
 
     // glfwGetTime is called only once, the first time this function is called
@@ -45,29 +44,36 @@ void computeMatricesFromInputs(){
     glm::vec3 up = glm::vec3( 0, 1, 0 );
 
     // Zoom in
-    if (glfwGetKey( window, GLFW_KEY_W ) == GLFW_PRESS){
+    if (glfwGetKey( window, GLFW_KEY_W ) == GLFW_PRESS)
+    {
         radius -= deltaRadius;
     }
     // Zoom out
-    if (glfwGetKey( window, GLFW_KEY_S ) == GLFW_PRESS){
+    if (glfwGetKey( window, GLFW_KEY_S ) == GLFW_PRESS)
+    {
         radius += deltaRadius;
     }
     // Move camera left
-    if (glfwGetKey( window, GLFW_KEY_A ) == GLFW_PRESS){
+    if (glfwGetKey( window, GLFW_KEY_A ) == GLFW_PRESS)
+    {
         phi -= deltaPhi;
     }
     // Move camera right
-    if (glfwGetKey( window, GLFW_KEY_D ) == GLFW_PRESS){
+    if (glfwGetKey( window, GLFW_KEY_D ) == GLFW_PRESS)
+    {
         phi += deltaPhi;
     }
     // Move camera up
-    if (glfwGetKey( window, GLFW_KEY_UP ) == GLFW_PRESS){
+    if (glfwGetKey( window, GLFW_KEY_UP ) == GLFW_PRESS)
+    {
         theta += deltaTheta;
     }
     // Move camera down
-    if (glfwGetKey( window, GLFW_KEY_DOWN ) == GLFW_PRESS){
+    if (glfwGetKey( window, GLFW_KEY_DOWN ) == GLFW_PRESS)
+    {
         theta -= deltaTheta;
     }
+    
 
     float FoV = initialFoV; // - 5 * glfwGetMouseWheel(); // Now GLFW 3 requires setting up a callback for this. It's a bit too complicated for this beginner's tutorial, so it's disabled instead.
 

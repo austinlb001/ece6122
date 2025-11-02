@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <vector>
+#include <thread>
 
 // Include GLEW
 #include <GL/glew.h>
@@ -72,9 +73,6 @@ int main( void )
     // Accept fragment if it is closer to the camera than the former one
     glDepthFunc(GL_LESS); 
 
-    // Cull triangles which normal is not towards the camera
-    glEnable(GL_CULL_FACE);
-
     GLuint VertexArrayID;
     glGenVertexArrays(1, &VertexArrayID);
     glBindVertexArray(VertexArrayID);
@@ -87,12 +85,20 @@ int main( void )
     GLuint ViewMatrixID = glGetUniformLocation(programID, "V");
     GLuint ModelMatrixID = glGetUniformLocation(programID, "M");
 
-    // Load the texture
-    GLuint Texture = loadDDS("uvmap.DDS");
-    
     // Get a handle for our "myTextureSampler" uniform
     GLuint TextureID  = glGetUniformLocation(programID, "myTextureSampler");
 
+    // Get a handle for "is_ell_active"
+    static GLint is_ell_active = 0;
+    static bool is_ell_pressed = false;
+    GLuint is_ell_active_handle = glGetUniformLocation(programID, "is_ell_active");
+    glUniform1i(is_ell_active_handle, is_ell_active);
+
+    /* For suzanne */
+    
+    // Load the texture
+    GLuint Texture = loadDDS("uvmap.DDS");
+    
     // Read our .obj file
     std::vector<unsigned short> indices;
     std::vector<glm::vec3> indexed_vertices;
@@ -100,7 +106,7 @@ int main( void )
     std::vector<glm::vec3> indexed_normals;
     bool res = loadAssImp("suzanne.obj", indices, indexed_vertices, indexed_uvs, indexed_normals);
 
-    /* Load it into a VBO */\
+    /* Load it into a VBO */
     GLuint vertexbuffer;
     glGenBuffers(1, &vertexbuffer);
     glBindBuffer(GL_ARRAY_BUFFER, vertexbuffer);
@@ -116,19 +122,56 @@ int main( void )
     glBindBuffer(GL_ARRAY_BUFFER, normalbuffer);
     glBufferData(GL_ARRAY_BUFFER, indexed_normals.size() * sizeof(glm::vec3), &indexed_normals[0], GL_STATIC_DRAW);
 
-
-    // Generate a buffer for the indices as well
     GLuint elementbuffer;
     glGenBuffers(1, &elementbuffer);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, elementbuffer);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, indices.size() * sizeof(unsigned short), &indices[0] , GL_STATIC_DRAW);
 
+    /* End suzanne */
+
+
+    /* For green square/rectange */
+
+    // Load the texture
+    GLuint rect_Texture = loadDDS("greenTile.dds");
+
+    // Read our .obj file
+    std::vector<unsigned short> rect_indices;
+    std::vector<glm::vec3> rect_indexed_vertices;
+    std::vector<glm::vec2> rect_indexed_uvs;
+    std::vector<glm::vec3> rect_indexed_normals;
+    bool rect_res = loadAssImp("green_tile.obj", rect_indices, rect_indexed_vertices, rect_indexed_uvs, rect_indexed_normals);
+
+    /* Load it into a VBO */
+    GLuint rect_vertexbuffer;
+    glGenBuffers(1, &rect_vertexbuffer);
+    glBindBuffer(GL_ARRAY_BUFFER, rect_vertexbuffer);
+    glBufferData(GL_ARRAY_BUFFER, rect_indexed_vertices.size() * sizeof(glm::vec3), &rect_indexed_vertices[0], GL_STATIC_DRAW);
+
+    GLuint rect_uvbuffer;
+    glGenBuffers(1, &rect_uvbuffer);
+    glBindBuffer(GL_ARRAY_BUFFER, rect_uvbuffer);
+    glBufferData(GL_ARRAY_BUFFER, rect_indexed_uvs.size() * sizeof(glm::vec2), &rect_indexed_uvs[0], GL_STATIC_DRAW);
+
+    GLuint rect_normalbuffer;
+    glGenBuffers(1, &rect_normalbuffer);
+    glBindBuffer(GL_ARRAY_BUFFER, rect_normalbuffer);
+    glBufferData(GL_ARRAY_BUFFER, rect_indexed_normals.size() * sizeof(glm::vec3), &rect_indexed_normals[0], GL_STATIC_DRAW);
+
+    GLuint rect_elementbuffer;
+    glGenBuffers(1, &rect_elementbuffer);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, rect_elementbuffer);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, rect_indices.size() * sizeof(unsigned short), &rect_indices[0] , GL_STATIC_DRAW);
+
+    /* End green rectangle */
 
     // Get a handle for our "LightPosition" uniform
     glUseProgram(programID);
     GLuint LightID = glGetUniformLocation(programID, "LightPosition_worldspace");
-    glm::vec3 lightPos = glm::vec3(4,4,4);
+    glm::vec3 lightPos = glm::vec3(4, 4, 4);
     glUniform3f(LightID, lightPos.x, lightPos.y, lightPos.z);
+
+	
 
     // For speed computation
     double lastTime = glfwGetTime();
@@ -153,10 +196,68 @@ int main( void )
         glUseProgram(programID);
 
         // Compute the MVP matrix from keyboard input
+        // Turn off specular and diffuse light components
+        if (glfwGetKey( window, GLFW_KEY_L ) == GLFW_PRESS)
+        {
+            if((is_ell_active == 0) && (is_ell_pressed == false))
+            {
+                is_ell_active = 1;
+            }
+            else if((is_ell_active == 1) && (is_ell_pressed == false))
+            {
+                is_ell_active = 0;
+            }
+            is_ell_pressed = true;
+        }
+        else
+        {
+            is_ell_pressed = false;
+        }
+        glUniform1i(is_ell_active_handle, is_ell_active);
         computeMatricesFromInputs();
         glm::mat4 ProjectionMatrix = getProjectionMatrix();
         glm::mat4 ViewMatrix = getViewMatrix();
         glUniformMatrix4fv(ViewMatrixID, 1, GL_FALSE, &ViewMatrix[0][0]);
+
+
+        /* Draw green rectangle */
+
+        // Bind our texture in Texture Unit 0
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, rect_Texture);
+        glUniform1i(TextureID, 0); // Set our "myTextureSampler" sampler to use Texture Unit 0
+
+        // Compute the MVP matrix from keyboard input
+        glm::mat4 rect_matrix = glm::mat4(1.0);
+        glm::mat4 rect_MVP0 = ProjectionMatrix * ViewMatrix * rect_matrix;
+
+        // Send our transformation to the currently bound shader, in the "MVP" uniform
+        glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &rect_MVP0[0][0]);
+        glUniformMatrix4fv(ModelMatrixID, 1, GL_FALSE, &rect_matrix[0][0]);
+        
+        // 1st attribute buffer : vertices
+        glEnableVertexAttribArray(0);
+        glBindBuffer(GL_ARRAY_BUFFER, rect_vertexbuffer);
+        glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+
+        // 2nd attribute buffer : UVs
+        glEnableVertexAttribArray(1);
+        glBindBuffer(GL_ARRAY_BUFFER, rect_uvbuffer);
+        glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 0, (void*)0);
+
+        // 3rd attribute buffer : normals
+        glEnableVertexAttribArray(2);
+        glBindBuffer(GL_ARRAY_BUFFER, rect_normalbuffer);
+        glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+
+        // Index buffer
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, rect_elementbuffer);
+
+        // Draw the triangles
+        glDrawElements(GL_TRIANGLES, rect_indices.size(), GL_UNSIGNED_SHORT, (void*)0);
+
+        /* End green rectangle */
+
 
         // Bind our texture in Texture Unit 0
         glActiveTexture(GL_TEXTURE0);
@@ -469,8 +570,13 @@ int main( void )
     glDeleteBuffers(1, &uvbuffer);
     glDeleteBuffers(1, &normalbuffer);
     glDeleteBuffers(1, &elementbuffer);
+    glDeleteBuffers(1, &rect_vertexbuffer);
+    glDeleteBuffers(1, &rect_uvbuffer);
+    glDeleteBuffers(1, &rect_normalbuffer);
+    glDeleteBuffers(1, &rect_elementbuffer);
     glDeleteProgram(programID);
     glDeleteTextures(1, &Texture);
+    glDeleteTextures(1, &rect_Texture);
     glDeleteVertexArrays(1, &VertexArrayID);
 
     // Close OpenGL window and terminate GLFW

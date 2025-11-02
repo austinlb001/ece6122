@@ -157,7 +157,6 @@ bool loadAssImp(
 		normals.push_back(glm::vec3(n.x, n.y, n.z));
 	}
 
-
 	// Fill face indices
 	indices.reserve(3*mesh->mNumFaces);
 	for (unsigned int i=0; i<mesh->mNumFaces; i++){
