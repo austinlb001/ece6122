@@ -1,0 +1,15 @@
+{
+	"InstallScripts" : 
+	[
+		"/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab5/code/SFML-master-hurley/build/cmake_install.cmake",
+		"/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab5/code/SFML-master-hurley/build/src/SFML/cmake_install.cmake",
+		"/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab5/code/SFML-master-hurley/build/src/SFML/System/cmake_install.cmake",
+		"/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab5/code/SFML-master-hurley/build/src/SFML/Network/cmake_install.cmake",
+		"/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab5/code/SFML-master-hurley/build/examples/cmake_install.cmake",
+		"/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab5/code/SFML-master-hurley/build/examples/Lab5/cmake_install.cmake",
+		"/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab5/code/SFML-master-hurley/build/Lab3/cmake_install.cmake",
+		"/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab5/code/SFML-master-hurley/build/Lab3/TCPServer/cmake_install.cmake",
+		"/mnt/DATA-UNC/school/georgia_tech_university/electrical_engineering/advanced_programming_techniques/labs/ece6122/lab5/code/SFML-master-hurley/build/Lab3/TCPClient/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

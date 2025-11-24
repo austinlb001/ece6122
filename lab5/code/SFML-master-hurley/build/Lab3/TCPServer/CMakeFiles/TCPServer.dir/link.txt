@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/TCPServer.dir/link.d CMakeFiles/TCPServer.dir/tcpServer.cpp.o -o TCPServer  ../../lib/libsfml-network-s.a ../../lib/libsfml-system-s.a -lpthread -lrt
